@@ -8,6 +8,6 @@ async def consumer_retrieve_raw_data(queue: asyncio.Queue=None):
         temp = await queue.get()
         if temp == "__producer__":
             item = await queue.get()
+            print("In consumer: ", item)
             break
         await queue.put("__consumer__")
-    print("In consumer: ", item)
