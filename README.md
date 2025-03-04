@@ -1,14 +1,29 @@
-# MultiThreadExample
-Showing some multithread examples.
+# 🪡 MultiThreadExample
+Showing some multithread examples with Flask.
 
-### Installation
-install flask with async: pip install flask[async]
+## 📦 Installation
+Install Flask with async support:
+```bash
+pip install flask[async]
+```
 
-### Execution
-then run: python app.py
+## ▶️ Execution
+Run the application:
+```bash
+python app.py
+```
 
-and in another terminal start the consumer first:
-    curl 127.0.0.1:5000/start_consumer
+### 📡 Start the Consumer
+Open a terminal and execute:
+```bash
+curl 127.0.0.1:5000/start_consumer
+```
 
-then start the producer:
-    curl 127.0.0.1:5000/start_producer
+### ⚙️ Start the Producer
+In another terminal, run:
+```bash
+curl 127.0.0.1:5000/start_producer
+```
+
+🎯 Now you have a simple multithreading example running!
+
